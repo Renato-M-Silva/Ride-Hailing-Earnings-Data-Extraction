@@ -185,7 +185,7 @@ if __name__ == "__main__":
 
         contours = preprocess(image_to_process, background_color)
 
-        """ testing contours
+        """ # testing contours. if needed, Activate this code by uncommenting it.
         lower_gray = 239
         upper_gray = 249
         # Grayscale
@@ -255,8 +255,9 @@ if __name__ == "__main__":
                 csv_writer.writerow([encoded_text])
 
         print(f"Data saved to {csv_file_path}")
+        print("------------------------------------")
 
-        """Testing"""
+        """ # Testing . if needed, Activate this code by uncommenting it.
         print("------------------------------------")
         print("Testing...")
         # Print total number of lines
@@ -306,6 +307,7 @@ if __name__ == "__main__":
         # Print the first 10 lines of text
         for i in range(min(10, len(image_text))):
             print(f"Text from subimage {i + 1}: {image_text[i]}")
+    """
 
 
     print("The process ended.")
