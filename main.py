@@ -247,11 +247,10 @@ if __name__ == "__main__":
         csv_file_path = base_name + ".csv"
 
         with open(csv_file_path, 'w', newline='', encoding='utf-8') as csvfile:
-            csv_writer = csv.writer(csvfile)
+            csv_writer = csv.writer(csvfile, delimiter=',') #Added delimiter
+            csv_writer.writerow(['Extracted Text']) #Added Header
             for text in image_text:
-                #csv_writer.writerow([text])  # Write data
-                # Encode the text to UTF-8, replacing any unencodable characters
-                encoded_text = text.encode('utf-8', errors='replace').decode('utf-8')
+                encoded_text = text.encode('utf-8', errors='replace').decode('utf-8') # Encode the text to UTF-8, replacing any unencodable characters
                 csv_writer.writerow([encoded_text])
 
         print(f"Data saved to {csv_file_path}")
