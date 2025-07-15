@@ -54,7 +54,7 @@ By processing these images, the script automates the extraction of earnings data
     * `numpy`
     * `tkinter`
     * `easyocr`
-    * `nvidia-ml-py3` (optional, for GPU monitoring)
+    * `nvidia-ml-py3`
 
 You can install the required libraries using pip:
 
