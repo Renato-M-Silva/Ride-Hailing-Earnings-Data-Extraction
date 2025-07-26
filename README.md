@@ -1,4 +1,4 @@
-# TVDE_earnings-history
+# Ride-Hailing Earnings Data Extraction
 # Image Text Extraction Script
 
 This Python script processes image files to extract text using OCR (Optical Character Recognition) and saves the extracted text to CSV files.
